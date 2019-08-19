@@ -6,8 +6,8 @@ import time
 from flask import Flask, request
 from sms.models import User
 from sms import db
-
-
+# 邮件发送 hhahah
+# 再次测试
 c = Celery('mails',
            broker='redis://:redis@127.0.0.1/0',
            backend='redis://:redis@127.0.0.1:6379/0',
@@ -54,7 +54,7 @@ def send_failed_email(reci_email):
         print(reci_email + u"又发送失败了")
 
     else:
-        print u"第二次邮件发送成功"
+        print(u"第二次邮件发送成功")
         # return "Sent Succeed222"
 
 
