@@ -6,8 +6,13 @@ import time
 from flask import Flask, request
 from sms.models import User
 from sms import db
+<<<<<<< .mine
 # 邮件发送 hhahah
 # 再次测试
+=======
+# 邮件发送
+
+>>>>>>> .theirs
 c = Celery('mails',
            broker='redis://:redis@127.0.0.1/0',
            backend='redis://:redis@127.0.0.1:6379/0',
