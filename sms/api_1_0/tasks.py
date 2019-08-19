@@ -20,6 +20,7 @@ c = Celery('mails',
            })
 
 
+
 @c.task(name="send_failed_email")
 def send_failed_email(reci_email):
     app = Flask(__name__)
